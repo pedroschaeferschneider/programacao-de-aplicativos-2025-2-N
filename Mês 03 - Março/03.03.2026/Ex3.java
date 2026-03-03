@@ -13,6 +13,10 @@ public class Ex3 {
 
 	}
 
+	/**
+	 * Imprime o número passado como parâmetro e os 20 números que vem depois
+	 * @param numero - O número inicial
+	 */
 	public static void imprimirNumeros(int numero) {
 
 		for (int i = numero; i <= numero + 20; i++) {
