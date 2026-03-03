@@ -10,6 +10,11 @@ public class Ex4 {
 		obterMedia(vetor);
 	}
 
+	/**
+	 * Encontra e exibe o maior valor presente no vetor.
+	 * 
+	 * @param vetor - array de inteiros para procurar o maior valor
+	 */
 	public static void obterMaiorValor(int vetor[]) {
 
 		int maiorValor = Integer.MIN_VALUE;
@@ -28,6 +33,11 @@ public class Ex4 {
 
 	}
 
+	/**
+	 * Encontra e exibe o menor valor presente no vetor.
+	 * 
+	 * @param vetor - array de inteiros para procurar o menor valor
+	 */
 	public static void obterMenorValor(int vetor[]) {
 
 		int menorValor = Integer.MAX_VALUE;
@@ -46,6 +56,11 @@ public class Ex4 {
 
 	}
 
+	/**
+	 * Calcula e exibe a média aritmética dos valores presentes no vetor.
+	 * 
+	 * @param vetor - array de inteiros para calcular a média
+	 */
 	public static void obterMedia(int vetor[]) {
 
 		double soma = 0;
