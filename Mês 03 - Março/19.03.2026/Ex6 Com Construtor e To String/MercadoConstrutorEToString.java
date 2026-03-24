@@ -70,7 +70,7 @@ public class MercadoConstrutorEToString {
 	 * 
 	 * Isso facilita leitura e depuração (debug).
 	 * 
-	 * Atalho eclipse: alt + shift + s -> Generate Constructor Using Fields
+	 * Atalho eclipse: alt + shift + s -> Generate toString
 	 * 
 	 */
 	@Override
