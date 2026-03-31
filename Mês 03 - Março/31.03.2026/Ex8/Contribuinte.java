@@ -19,16 +19,16 @@ public class Contribuinte {
 	 * @return valor do imposto devido
 	 */
 	public double calcularImposto() {
-		if (rendaAnual >= 0 && rendaAnual <= 4000) {
+		if (rendaAnual <= 4000) {
 			return 0;
 		} else if (rendaAnual <= 9000) {
-			return rendaAnual * 0.058;
+			return 0.058 * rendaAnual;
 		} else if (rendaAnual <= 25000) {
-			return rendaAnual * 0.15;
+			return 0.15 * rendaAnual;
 		} else if (rendaAnual <= 35000) {
-			return rendaAnual * 0.275;
+			return 0.27 * rendaAnual;
 		} else {
-			return rendaAnual * 0.3;
+			return 0.3 * rendaAnual;
 		}
 	}
 
