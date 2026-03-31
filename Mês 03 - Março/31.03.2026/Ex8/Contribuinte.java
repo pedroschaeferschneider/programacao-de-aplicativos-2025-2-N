@@ -14,22 +14,33 @@ public class Contribuinte {
 	}
 
 	/**
-	 * Calcula o imposto com base na renda anual.
+	 * Calcula a alíquota de imposto com base na renda anual do contribuinte. Pode
+	 * ser private pois é somente usado na classe Contribuinte
+	 *
+	 * @return Alíquota correspondente à renda anual
 	 * 
-	 * @return valor do imposto devido
 	 */
-	public double calcularImposto() {
+	private double calcularAliquota() {
 		if (rendaAnual <= 4000) {
 			return 0;
 		} else if (rendaAnual <= 9000) {
-			return 0.058 * rendaAnual;
+			return 0.058;
 		} else if (rendaAnual <= 25000) {
-			return 0.15 * rendaAnual;
+			return 0.15;
 		} else if (rendaAnual <= 35000) {
-			return 0.27 * rendaAnual;
-		} else {
-			return 0.3 * rendaAnual;
+			return 0.27;
 		}
+		return 0.3;
+	}
+
+	/**
+	 * Calcula o valor do imposto devido pelo contribuinte. O cálculo é feito
+	 * multiplicando a renda anual pela alíquota correspondente.
+	 *
+	 * @return Valor do imposto a ser pago
+	 */
+	public double calcularImposto() {
+		return calcularAliquota() * rendaAnual;
 	}
 
 	/**
