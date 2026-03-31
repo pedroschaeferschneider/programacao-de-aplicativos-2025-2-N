@@ -14,8 +14,9 @@ public class Contribuinte {
 	}
 
 	/**
-	 * Calcula a alíquota de imposto com base na renda anual do contribuinte. Pode
-	 * ser private pois é somente usado na classe Contribuinte
+	 * Calcula a alíquota de imposto com base na renda anual do contribuinte <br>
+	 * 
+	 * Pode ser private pois é somente usado na classe Contribuinte
 	 *
 	 * @return Alíquota correspondente à renda anual
 	 * 
